@@ -4,16 +4,14 @@ Cisco Scripts
 
 
 git status
-git add test.php // git add . (stage everything) // git add *html (html only)
-
-git commit -m "Update 2 by me"
-git commit -a -m "xxx" (no commit)
-
+git add test.php 		// Add File to index 
+ git add . 			// stage everything 
+ git add *html 			// Add only files with *.html
+git commit -m "Update 2 by me"	// Commit Changes in Index
 git log
 
-git push
-
-
+git push			// Push to Remote Repository (github)
+git pull			// Pull latest from remote respository
 
 // 
 create .gitignore ->  *.log -> ignores log files
