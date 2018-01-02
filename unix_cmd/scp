@@ -1,0 +1,4 @@
+#Copy from OSX to a Unix server
+scp rrense@10.23.177.22:/Users/rrense/Desktop/Nike/ips.txt /home/rrense/ips.txt
+
+## Make sure user is added to the permission list -> System Pref -> Sharing -> remote login
