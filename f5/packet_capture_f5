@@ -1,7 +1,10 @@
 Capture traffic to Virtual IP and real server same time 
 tcpdump -vnni 0.0:nnnp -s 0 host x.x.vip.x and host x.x.x.x -w /var/tmp/traffic_to_vip.pcap
 
-Normal packet capture
+Normal packet capture:
+#
 tcpdump -s 0 -ni 0.0 -vv -w /var/tmp/09282016_fixedpos_outside_0943 port 443
 
-
+Extended packet capture:
+#
+tcpdump -envi 0.0:nnnp -s0 'host 86.84.48.17 and port 443' -w /var/tmp/F5_ts.pcap
